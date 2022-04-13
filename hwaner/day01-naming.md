@@ -1,1 +1,127 @@
-retest
+### 1. 깨끗한 코드
+
+## 코드는?
+
+- 코드는 요구사항을 표현하는 언어다!
+  - 요구사항은 상세하게 작성되어야 한다!
+    - 모호한 코드는 의도를 제대로 파악할 수 없다!
+- 그러므로 코드는 항상 존재할 것이다.
+
+## 왜 나쁜 혹은 더러운 코드를 짰을까?
+
+- 대충 짠, 재활용도 불가지만, 그럼에도 불구하고 실행되는 프로그램이 낫다고 생각하기 때문!
+  - 다음에 정리하자는 마인드..
+- **르블랑의 법칙** : **나중은 결코 오지 않는다**
+
+## 클린코드란?
+
+- C++ 창시자인 **비야네 스트롭스트룹**(이름 왜이래)님이 한 말씀중 하나
+  : 깨끗한 코드는 한가지를 제대로 한다.(많이 본거 같다. **단일 책임의 원칙?**)
+- **그래디 부치**(이분 이름은 좀 낫다)님이 한 말씀중 하나
+  : 깨끗한 코드는 잘 쓴 문장처럼 읽힌다.
+  - **코드는 추측이 아니라 사실에 기반해야 한다.**
+- **데이브 토마스**
+  : 작성자가 아닌 사람도 고치기 쉬워야한다.
+- **마이클 페더스**
+  : **주의 깊게!**
+- **켄트 백**이 제안한 규칙
+  1. 모든 테스트를 통과한다.
+  2. 중복이 없다.
+  3. 시스템 내 모든 설계 아이디어를 표현한다.
+  4. 클래스, 메서드, 함수등을 최대한 줄인다.
+     : 집합을 추상화, 초반부터 간단하게 추상화를 고려해보자!
+- **워드 커닝햄**
+  : 문제를 풀기 위한 언어처럼 보인다면 아름다운 코드다!
+
+### 2. 의미있는 이름
+
+## 의도
+
+## 일관성 있는 표기
+
+## 상수처리
+
+## 클래스 이름
+
+- 클래스나 객체의 이름은 명사나 명사구가 적합하다.
+
+## 메서드 이름
+
+- 메서드 이름은 동사나 동사구가 적합하다.
+
+# ex1
+
+```
+Complex fulcrumPoint = Complex.FromRealNumber(23.0);
+```
+
+```
+Complex fulcrumPoint = new Complex(23.0);
+```
+
+- 위가 더 낫다.
+
+## 알만한 이름을 사용하자!
+
+## 맥락있게 코드를 짜자!
+
+# ex2
+
+```
+int a;
+String b;
+
+// ..
+
+System.out.printf("User Requested %s, count = %d, b, a);
+```
+
+```
+int itemCount;
+String itemName;
+
+// ..
+
+System.out.printf("User Requested %s, count = %d, itemName, itemCount);
+```
+
+```
+class SalesItem {
+  ItemCode code;
+  String name;
+  int count;
+}
+
+// ..
+
+SalesItem selectedItem = salesItemRepository.getItemByCode(purchaseRequest.getItemCode());
+
+System.out.printf("User Requested %s, count = %d, selectedItem.getName(), selectedItem.getCount());
+```
+
+## 루프속에서 i, j, k 사용X
+
+- advanced for 문
+- lamda를 사용할 수도 있다.
+  - index가 굳이 필요 없을 때
+
+## 변수명에 타입X
+
+```
+String nameString -> name
+Int itemPriceAmount -> itemPrice
+
+Account[] accountArray -> accounts
+List<Account> accountList -> accounts, accountList -> accounts
+Map<Account> accountMap
+
+public interface IShapeFactory -> ShapeFactory
+public class ShapeFactoryImpl -> CircleFactory
+```
+
+## Google Java Naming Guide
+
+- https://google.github.io/styleguide/javaguide.html#s5-naming
+  - package: all lower case, no underscores
+  - class: UpperCamelCase(test class는 Test로 끝내기)
+  - method: LowerCamelCase
