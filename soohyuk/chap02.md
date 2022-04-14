@@ -31,4 +31,4 @@ public List<Cell> getFlaggedCells(){
 
 ( 아래 링크는 그 이유에 대한 상세한 설명  )
 
-[정적 팩토리 메서드는 왜 사용할까?](https://velog.io/@ljinsk3/%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C)
+[정적 팩토리 메서드는 왜 사용할까? 에 대한 설명 링크 ](https://velog.io/@ljinsk3/%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C)
