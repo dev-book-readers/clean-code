@@ -1,4 +1,4 @@
-#1. 주석을 최대한 쓰지말자
+# 1. 주석을 최대한 쓰지말자
 - 주석은 나쁜코드를 보완을 하지 못한다
   - 코드의 품질이 나쁘기 때문
   ```java
@@ -13,7 +13,7 @@
 
 - 주석은 방치될수 있다(기능이 추가된다면?)
 
-#2. 좋은 주석이란?
+# 2. 좋은 주석이란?
 - 구현에 대한 정보를 제공
 - 의도와 중요성을 설명
 ```java
@@ -25,7 +25,7 @@ String userName = userNameInput.trim();
   - FIXME: 문제가 있지만 당장 수정할 필요는 ㄴㄴ일때, 가능한 빨리 수정
     - IDE에서 하이라이팅 되고 따로 볼 수 있음
     
-#3. annotation
+# 3. annotation
 - 코드에 대한 메타데이터
 ```java
 @Deprecated
@@ -34,7 +34,7 @@ String userName = userNameInput.trim();
 - ThreadSafe 하지 않음을 나타냄
 ```
 
-#4. javaDoc
+# 4. javaDoc
 - Java 코드에서 API 문서를 HTML 형식으로 생성해주는 도구
 ```java
 /**
