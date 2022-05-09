@@ -89,11 +89,11 @@ TODO 너무 많은 코드도 바람직하지 않다. 주기적으로 점검하�
 ### 비공개 코드에서 javadocs
 
 ### 예제
-before refactoring
-![before01](./img/04_01_before01.png)
-![before02](./img/04_01_before02.png)
-![before03](./img/04_01_before03.png)
-after refactoring
-![after01](./img/04_02_after01.png)
-![after02](./img/04_02_after02.png)
-![after03](./img/04_02_after03.png)
+before refactoring  
+![before01](./img/04_01_before01.png)  
+![before02](./img/04_01_before02.png)  
+![before03](./img/04_01_before03.png)  
+after refactoring  
+![after01](./img/04_02_after01.png)  
+![after02](./img/04_02_after02.png)  
+![after03](./img/04_02_after03.png)  
