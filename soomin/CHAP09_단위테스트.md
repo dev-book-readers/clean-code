@@ -8,14 +8,14 @@
 - 테스트 케이스가 없다면 모든 변경이 잠정적인 버그. 테스트 커버리지가 높을수록 버그에 대한 공포가 줄어든다.
 - 지저분한 테스트 코드는 테스트를 안하니만 못하다.
 - 테스트는 자동화 되어야 한다
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae86326f-4cc1-4019-9e2b-90e7dc337dbb/Untitled.png)
+- 
+![](imgs/chap09-01.png)
 
 ## 테스트의 종류
 
 - 테스트 피라미드
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40dafb65-d638-4bab-b537-9758cf8c888b/Untitled.png)
+![](imgs/chap09-02.png)
 
 ## Unit Test 작성
 
@@ -23,7 +23,7 @@
 - JUnit5 + mockito 를 많이 사용한다.
 - Test Double
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea8d3693-d184-43aa-9f2a-f66e4b9967f5/Untitled.png)
+![](imgs/chap09-03.png)
 
 - given-when-then 패턴을 사용하자
 
@@ -47,7 +47,7 @@ public void testGetPageHierarchyHasRightTags() throws Exception {
 - when : 테스트하고 싶은 동작 호출
 - then : 테스트 결과 확인
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0573a600-0025-4fc4-8e65-d68586ce884a/Untitled.png)
+![](imgs/chap09-04.png)
 
 ## FIRST 원칙
 
